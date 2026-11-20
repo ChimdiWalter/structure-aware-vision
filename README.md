@@ -31,3 +31,6 @@ When does changing the visual context change what a network considers a single o
 
 ## Testbed
 The main testbed is plant phenotyping: lesion segmentation on maize leaf photographs. The questions themselves are general.
+
+## License
+Code in this repository is released under the [MIT License](LICENSE).
