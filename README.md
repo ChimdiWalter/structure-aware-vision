@@ -5,7 +5,7 @@ Geometry- and topology-aware representation learning for vision. This research a
 - how object geometry can be made executable, with certified error bounds;
 - when visual context changes what a network considers an object.
 
-Research by Chimdi Walter Ndubuisi, University of Missouri. Manuscripts and code are being added; each part states its current status.
+Research by Chimdi Walter Ndubuisi, University of Missouri. It builds on **HyperTopo-Adapters** ([arXiv:2601.06067](https://arxiv.org/abs/2601.06067)), product-manifold adapter heads for geometry- and topology-aware segmentation on frozen DINOv2 encoders. Manuscripts and code are being added; each part states its current status.
 
 ## 1. What vision features encode about geometry
 *Status: manuscript under review. Code will be released after review.*
@@ -23,7 +23,7 @@ This part develops a Finsler-metric formulation in which a learned field induces
 - **Negative result.** On real leaf images, seeding objects from persistent maxima and assigning pixels by geodesic distance did not outperform inexpensive geodesic or watershed baselines. This result motivated part 3.
 
 ## 3. Object identity: context and certificates
-*Status: exploratory. Synthetic demos are being added.*
+*Status: exploratory. Code, synthetic demo and theory: [object-identity/](object-identity/).*
 
 When does changing the visual context change what a network considers a single object? Can an object's existence and its membership be certified under bounded perturbations?
 - **Context.** Shifting only the tile grid changed object identity for 44% of a segmentation model's objects on seven validation leaves. Against the current binary annotations, this instability did not detect structural errors better than pixel entropy did.
